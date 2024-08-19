@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "resume"
+version = "0.1.0"
+description = "Personal Resume"
+authors = ["Christopher Chan-Nui <channui@tiny.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rendercv = "^1.13"
+poethepoet = "^0.27.0"
+
+[tool.poe.tasks]
+build = "rendercv render channui.yaml"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

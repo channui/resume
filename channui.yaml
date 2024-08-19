@@ -1,0 +1,151 @@
+cv:
+  name: Christopher Chan-Nui
+  email: channui@tiny.org
+  phone: tel:+1-512-917-9856
+  location: "403 Settlers Valley Dr, Pflugerville TX 78660"
+  social_networks:
+  - network: LinkedIn
+    username: channui
+  - network: GitHub
+    username: channui
+
+  sections:
+    Overview:
+      - Self-starter who adapts to new situations rapidly and invests heavily into automating tasks to increase productivity. Have developed software from embedded all the way to web services. Lead programmer seeking position  delivering projects in individual or small teams.
+
+    experience:
+      - company: Intel
+        position: Software Engineer
+        location: Austin, TX
+        start_date: 2018
+        end_date: present
+        highlights:
+          - Coordinated internal teams to deliver pre-release and production software to the customer
+          - Collaborated on developing and implementing software deployment on 10k+ node cluster
+          - Managed internal fleet of 80 nodes dedicated to codeveloping software for Aurora cluster
+          - Containerized build process using podman/buildah to provide isolation and reproducibility for the build process
+          - Produced dashboards summarizing useful information from disparate groups
+          - Automated deploying Artifactory build artifacts on multiple systems
+          - Debugged application and system issues
+          - Built custom OS images to mirror what customer experience
+          - Developed networked image deployment and recovery tools
+
+      - company: Oracle / Sun
+        position: Principle Software Engineer
+        location: Austin, TX
+        start_date: 2003
+        end_date: 2018
+        highlights:
+          - Deployed Software Defined Infrastructure using Terraform, Ansible, Vault, and OpenStack
+          - Acted as co-architect and team lead for the development of unreleased part of Oracle Public Cloud Service
+          - Participated in delivering world record TPC-C run, running a network of 100+ machines
+          - Developed benchmark drivers for TPC-C and TPC-E benchmarks
+          - Administered 100+ node hardware benchmark lab for pre-release systems
+          - Developed internal tools to inject performance instrumentation
+          - Deployed performance data website
+          - Architected, developed, and deployed secure reverse proxy tunnel enabling access to next-gen cloud functionality
+
+      - company: Surgient Networks
+        position: Member of Technical Staff
+        location: Austin, TX
+        start_date: 2000
+        end_date: 2003
+        highlights:
+          - Implemented, debugged, and optimized pieces of an embedded TCP/IP offload engine
+          - Developed a simulation harness for custom networking fabric to allow development in the absence of actual hardware
+          - Wrote device drivers for Linux and the ThreadX RTOS
+          - Wrote many development and debug tools
+          - Developed tooling to modify and repackage ELF flash images and dynamically modify an image using DWARF information
+          - Added table-driven wireshark parser to handle custom fabric protocol
+          - Wrote tools and macros to enable development tools to work with an unsupported, unreleased processor
+
+      - company: Chan-Nui Computer Consulting
+        position: Owner
+        location: Austin, TX
+        start_date: 1999
+        end_date: 2000
+        highlights:
+          - Wrote regression test harness
+          - Automated workflows
+          - Employed Unix scripting and job stream control
+
+      - company: IBM
+        position: Staff
+        location: Austin, TX
+        start_date: 1992
+        end_date: 1999
+        highlights:
+          - IBM's primary representative to the Standard Perfomance Evaulation Corporation (SPEC)
+          - IBM's technical and voting representative to CPU and Web subcommittee
+          - Developed benchmark harnesses for SPEC CPU and Web, TPC-A, TPC-B, TPC-C
+          - Maintained internal lab network
+          - Automated and improved many tasks
+          - Wrote firmware for a data collection board
+
+#    projects:
+#      - Volunteered at UT String project
+#      - Stepped in to teach a TEALS Intro to Programming class at a local high school
+#      - Fan-subtitled anime before it was mainstream
+
+    education:
+      - institution: University of Washington
+        area: Computer Engineering
+        degree: BS
+        start_date: 1987
+        end_date: 1992
+
+    skills:
+      - "Languages: Python, C++, C, Shell (zsh), many other algol derivitives"
+      - "Networking: TCP/UDP/IP protocols and socket programming, client/server, REST APIs"
+      - "Development: Unix/Solaris/BSD/Linux OpenSUSE/RedHat, SQLite/MySQL/Postgres"
+      - "Security: ACLs, Unix permissions, certificates, Web authentication, secret stores, paranoid in general"
+      - "Software Defined Infrastructure: Terraform, Ansible, AWS"
+
+design:
+  theme: classic
+  font: Source Sans 3
+  font_size: 10pt
+  page_size: letterpaper
+  color: '#004f90'
+  disable_external_link_icons: false
+  disable_page_numbering: true
+  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  disable_last_updated_date: true
+  last_updated_date_style: Last updated in TODAY
+  header_font_size: 30 pt
+  text_alignment: justified-with-no-hyphenation
+  seperator_between_connections: ''
+  use_icons_for_connections: true
+  margins:
+    page:
+      top: 2 cm
+      bottom: 3 cm
+      left: 2 cm
+      right: 2 cm
+    section_title:
+      top: 0.3 cm
+      bottom: 0.2 cm
+    entry_area:
+      left_and_right: 0.2 cm
+      vertical_between: 0.2 cm
+      date_and_location_width: 3 cm
+      education_degree_width: 1 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0.4 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 0.3 cm
+      bottom: 0.3 cm
+      horizontal_between_connections: 0.5 cm
+  show_timespan_in: []
+
+# design:
+#   theme: moderncv
+#   font_size: 10pt
+#   page_size: letterpaper
+#   color: blue
+#   date_width: 3.8 cm
+#   content_scale: 0.75
+#   show_only_years: false
+#   disable_page_numbers: false
