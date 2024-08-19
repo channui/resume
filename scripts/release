@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -o pipefail
+set -o nounset
+set -o errexit
+
+VERSION=$(poetry version -s)
+PDF_FILE="rendercv_output/Christopher_Chan-Nui_resume-${VERSION}.pdf" 
+rendercv render --pdf-path "${PDF_FILE}" channui.yaml
+
+gh release create v${VERSION} ${PDF_FILE}
+
+#git tag v${VERSION}
+#git push origin --tags

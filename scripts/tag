@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# Release new version to github pass the version part to update to increment 
+# version number
+
+set -o pipefail
+set -o nounset
+set -o errexit
+
+BUMP=${1:-"minor"}
+
+if [[ $(git status --porcelain) != "" ]]; then
+    echo "Repository is not clean, please commit files"
+    exit 1
+fi
+
+if [[ -n "$BUMP" ]] && [[ "$BUMP" != "none" ]]; then
+    poetry version $BUMP
+    git commit -m "Update version to $(poetry version -s)"  pyproject.toml
+fi
+
+VERSION=$(poetry version -s)
+echo "VERSION=${VERSION}"
+
+git tag v${VERSION}
+git push origin --tags
