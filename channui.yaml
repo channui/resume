@@ -98,7 +98,7 @@ cv:
       - "Languages: Python, C++, C, Shell (zsh), many other algol derivitives"
       - "Networking: TCP/UDP/IP protocols and socket programming, client/server, REST APIs"
       - "Development: Unix/Solaris/BSD/Linux OpenSUSE/RedHat, SQLite/MySQL/Postgres"
-      - "Security: ACLs, Unix permissions, certificates, Web authentication, secret stores, paranoid in general"
+      - "Security: ACLs, Unix permissions, certificates, Web authentication, secret stores"
       - "Software Defined Infrastructure: Terraform, Ansible, AWS"
 
 design:
