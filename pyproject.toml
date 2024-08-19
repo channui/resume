@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "resume"
-version = "0.2.0"
+version = "0.3.0"
 description = "Personal Resume"
 authors = ["Christopher Chan-Nui <channui@tiny.org>"]
 readme = "README.md"
