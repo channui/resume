@@ -1,3 +1,5 @@
+# $schema: https://github.com/rendercv/rendercv/blob/main/schema.json?raw=true
+# yaml-language-server: $schema=https://github.com/rendercv/rendercv/blob/main/schema.json?raw=true
 cv:
   name: Christopher Chan-Nui
   email: channui@tiny.org
@@ -95,51 +97,64 @@ cv:
         end_date: 1992
 
     skills:
-      - "Languages: Python, C++, C, Shell (zsh), many other algol derivitives"
-      - "Networking: TCP/UDP/IP protocols and socket programming, client/server, REST APIs"
-      - "Development: Unix/Solaris/BSD/Linux OpenSUSE/RedHat, SQLite/MySQL/Postgres"
-      - "Security: ACLs, Unix permissions, certificates, Web authentication, secret stores"
-      - "Software Defined Infrastructure: Terraform, Ansible, AWS"
+      - label: Languages
+        details: Python, C++, C, Shell (zsh), many other algol derivatives
+      - label: Networking
+        details: TCP/UDP/IP protocols and socket programming, client/server, REST APIs
+      - label: Development
+        details: Unix/Solaris/BSD/Linux OpenSUSE/RedHat, SQLite/MySQL/Postgres
+      - label: Security
+        details: ACLs, Unix permissions, certificates, Web authentication, secret stores
+      - label: Software Defined Infrastructure
+        details: Terraform, Ansible, AWS
 
 design:
   theme: classic
-  font: Source Sans 3
-  font_size: 10pt
-  page_size: letterpaper
-  color: '#004f90'
-  disable_external_link_icons: false
-  disable_page_numbering: true
-  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  disable_last_updated_date: true
-  last_updated_date_style: Last updated in TODAY
-  header_font_size: 30 pt
-  text_alignment: justified-with-no-hyphenation
-  seperator_between_connections: ''
-  use_icons_for_connections: true
-  margins:
-    page:
-      top: 2 cm
-      bottom: 3 cm
-      left: 2 cm
-      right: 2 cm
-    section_title:
-      top: 0.3 cm
-      bottom: 0.2 cm
-    entry_area:
-      left_and_right: 0.2 cm
-      vertical_between: 0.2 cm
-      date_and_location_width: 3 cm
-      education_degree_width: 1 cm
-    highlights_area:
-      top: 0.10 cm
-      left: 0.4 cm
-      vertical_between_bullet_points: 0.10 cm
-    header:
-      vertical_between_name_and_connections: 0.3 cm
-      bottom: 0.3 cm
-      horizontal_between_connections: 0.5 cm
-  show_timespan_in: []
+  text:
+      alignment: justified-with-no-hyphenation
+  page:
+      left_margin: 2cm
+      right_margin: 1.9cm
+      show_page_numbering: false
+      show_last_updated_date: false
+  links:
+      use_external_link_icon: true
+#  header:
+#      name_font_family: Source Sans 3
+#      name_font_size: 30pt
+#      separator_between_connections: ''
+#      use_icons_for_connections: true
+#      vertical_space_between_name_and_connections: 0.3cm
+#      horizontal_space_between_connections: 0.5cm
+  section_titles:
+      vertical_space_above: "1em"
+      vertical_space_below: "1em"
+  entries:
+#      left_and_right_margin: "0.2cm"
+      vertical_space_between_entries: "2em"
+      date_and_location_width: "3cm"
+#
+      allow_page_break_in_entries: false
+#      allow_page_break_in_sections: false
+#
+#      horizontal_space_between_columns: "0.1cm"
+#      short_second_row: false
+#      show_time_spans_in: []
+  highlights:
+      top_margin: 1em
+#      left_margin: 0.4cm
+      vertical_space_between_highlights: 0.8em
 
+
+
+#  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+#  last_updated_date_style: Last updated in TODAY
+#  margins:
+#    entry_area:
+#      education_degree_width: 1 cm
+#    header:
+#      bottom: 0.3 cm
+#
 # design:
 #   theme: moderncv
 #   font_size: 10pt
